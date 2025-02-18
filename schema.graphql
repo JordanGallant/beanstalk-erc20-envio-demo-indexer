@@ -1,0 +1,39 @@
+type Bean_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type Bean_EIP712DomainChanged {
+  id: ID!
+}
+
+type Bean_RoleAdminChanged {
+  id: ID!
+  role: String!
+  previousAdminRole: String!
+  newAdminRole: String!
+}
+
+type Bean_RoleGranted {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type Bean_RoleRevoked {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type Bean_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
